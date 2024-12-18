@@ -2,7 +2,7 @@
 
 namespace Machine.Specifications.Runner
 {
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
     public class ContextInfo
@@ -71,7 +71,7 @@ namespace Machine.Specifications.Runner
         }
     }
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
     public class CapturedOutput

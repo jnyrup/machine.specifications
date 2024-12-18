@@ -1,12 +1,12 @@
 using System;
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
 using System.Runtime.Serialization;
 #endif
 
 namespace Machine.Specifications
 {
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
     public class SpecificationUsageException : Exception
@@ -32,7 +32,7 @@ namespace Machine.Specifications
         {
         }
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
         protected SpecificationUsageException(
           SerializationInfo info,
           StreamingContext context)
@@ -42,7 +42,7 @@ namespace Machine.Specifications
 #endif
     }
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
     public class SpecificationException : Exception
@@ -68,7 +68,7 @@ namespace Machine.Specifications
         {
         }
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
         protected SpecificationException(
           SerializationInfo info,
           StreamingContext context)

@@ -60,7 +60,7 @@ namespace Machine.Specifications.Runner.Impl
 
         private bool IsAsyncVoid()
         {
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
             var method = target.Method;
 #else
             var method = target.GetMethodInfo();

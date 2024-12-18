@@ -21,7 +21,7 @@ namespace Machine.Specifications.Utility
 {
     internal static class ReflectionCompatExtensions
     {
-#if NETSTANDARD
+#if NETSTANDARD1_3
         public static bool IsType(this MemberInfo memberInfo)
         {
             return memberInfo is TypeInfo;

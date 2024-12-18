@@ -18,7 +18,7 @@ using System.Security;
 namespace Machine.Specifications.Runner.Impl
 {
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
 

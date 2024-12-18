@@ -18,7 +18,7 @@ namespace Machine.Specifications
         Ignored
     }
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
     public class ExceptionResult
@@ -128,7 +128,7 @@ namespace Machine.Specifications
         #endregion
     }
 
-#if !NETSTANDARD
+#if !NETSTANDARD1_3
     [Serializable]
 #endif
     public class Result

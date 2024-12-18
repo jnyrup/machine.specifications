@@ -24,7 +24,7 @@ namespace Machine.Specifications.Runner.Impl.Listener.Redirection
                 var first = _inner.FirstOrDefault();
                 if (first == null)
                 {
-#if NETSTANDARD
+#if NETSTANDARD1_3
                     return Encoding.UTF8;
 #else
 
